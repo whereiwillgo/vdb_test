@@ -1,5 +1,5 @@
 # vdb_test
-
+`
 Name:
     $SCRIPT - scan lun on hosts and create parameter file for vdbench
 Usage: 
@@ -24,3 +24,4 @@ Options:
     [-w <warm time>], default 120, warmup time.
     [-i <interval>], default 10, interval time.
     [-k <skew>], default null
+`
