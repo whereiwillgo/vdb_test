@@ -25,3 +25,28 @@ Options:
     [-i <interval>], default 10, interval time.
     [-k <skew>], default null
 ```
+
+```
+IO Mode List:
+    oltp : 20%-8k rr, 45%-4k rr, 15%-8k rw, 10%-64k sr, 10%-64k sw
+    olap : 15%-4k rr, 5%-4k rw, %70-64k sr, 10%-64k sw
+    seq-wirte : 1M seek 0 read 0
+    seq-read : 1M seek 0 read 100
+    rand-wirte : 8k seek 100 read 0
+    rand-read : 8k seek 100 read 100
+    olap-log : 2/4/8/16/32/64K, read 10, seek 0
+    dwh : 512K, read 90, seek 0
+    web : 4/8K, read 95, seek 75
+    web-log : 8K, read 0, seek 0
+    fs : 64K, read 80, seek 100
+    exchange2007 : 8K, read 60, seek 100
+    exchange2010 : 32K, read 60, seek 100
+    exchange2013 : 32K, read 70, seek 100
+    os-paging : 64K, read 90, seek 0
+    mssql-log : 64K, read 0, seek 0
+    vdi-start : 16/32K, read 100, seek 100
+    vdi-login : 16/32K, read 0, seek 100
+    vdi-run : 16/32K, read 20, seek 0
+    spc : 4K, read 40, seek 70
+    vedio : 512K, read 40, seek 70
+```
